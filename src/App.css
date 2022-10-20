@@ -1,38 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 .App {
   text-align: center;
+padding-top: 50px;
+padding-bottom: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
+html {background-color: black}
+
+* {
+  color: white;
+  transition: all .5s ease;
+  font-family: 'Inter', sans-serif;
+font-weight: 200;
+}
+
+.TransformedCreature{
+  opacity: 0.3;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Creatures{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Pika{
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  margin: 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.SelectedSign::after{
+  content: "SELECTED";
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.582);
+  font-size: 12px;
+  font-weight: 200;
+  border-radius: 20px;
+  padding: 1px 14px;
+
+  margin-top: 172px;
+    margin-left: -69px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Creature{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.Creature:hover{
+  /* border : 1px solid limegreen; */
+}
+
+.UnavailableSign{
+  position: absolute;
+  margin-top: 78px;
+}
+
+.ProceedButton{
+  margin-top: 60px;
+ /* color: rgb(255, 0, 0);*/
+ color: black;
+  background-color: rgb(179, 254, 0);
+  font-size: 30px;
+  border: 1px red solid;
+  padding: 10px 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ProceedText{
+  /*add stroke to text */
+  color: black;
+  -webkit-text-stroke: 1px red;
 }
