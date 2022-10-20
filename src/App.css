@@ -33,8 +33,9 @@ font-weight: 200;
 }
 
 .Pika{
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
+  padding: 15px;
   background-color: rgb(255, 255, 255);
   border-radius: 5%;
   margin: 10px;
