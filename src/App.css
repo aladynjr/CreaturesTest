@@ -54,6 +54,15 @@ font-weight: 200;
 
   margin-top: 172px;
     margin-left: -69px;
+
+    /*fade in animation */
+    animation: fadeIn ease 0.2s;
+
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 .Creature{

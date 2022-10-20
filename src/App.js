@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import clsx from 'clsx';
 import Pika from './assets/img/pika.png'
+
 function App() {
   const [creatures, setCreatures] = useState([
     { name: 'Creature 1', selected: false, transformed: false },
@@ -71,7 +72,7 @@ function App() {
                   <p style={{fontWeight:'200', fontSize:'20px'}} >UNAVAILABLE</p>
                   <p style={{fontSize:' 10px', fontWeight: '200', marginTop: '-10px'}} >ALREADY TRANSFORMED</p>
                 </div>}
-                <p style={{ marginBottom: '0' }} >{creature.name}</p>
+                <p style={{ marginBottom: '0', marginTop:'0px', fontWeight:'300', fontSize:'15px' }} >{creature.name}</p>
                 
                 {/* {(creature.selected && !creature.transformed) && <b style={{ color: 'red', fontSize: '10px' }} >SELECTED</b>} */}
                 {/* {creature.transformed && <b style={{ color: 'blue', fontSize: '10px' }} >TRANSFORMED</b>} */}
